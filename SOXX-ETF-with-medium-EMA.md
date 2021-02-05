@@ -42,99 +42,6 @@ del(df['Low'])
 df.tail()
 ```
 
-    yfinance.Ticker object <SOXX>
-
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Close</th>
-      <th>Volume</th>
-      <th>Return</th>
-      <th>sign1</th>
-      <th>sign2</th>
-      <th>position</th>
-    </tr>
-    <tr>
-      <th>Date</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2020-04-20</th>
-      <td>226.37</td>
-      <td>904400</td>
-      <td>-0.021977</td>
-      <td>220.653263</td>
-      <td>219.809794</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2020-04-21</th>
-      <td>215.28</td>
-      <td>1217700</td>
-      <td>-0.050231</td>
-      <td>220.438332</td>
-      <td>219.162680</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2020-04-22</th>
-      <td>228.31</td>
-      <td>1113700</td>
-      <td>0.058765</td>
-      <td>220.753199</td>
-      <td>220.469440</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2020-04-23</th>
-      <td>226.03</td>
-      <td>977700</td>
-      <td>-0.010037</td>
-      <td>220.964271</td>
-      <td>221.263806</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2020-04-24</th>
-      <td>230.73</td>
-      <td>962400</td>
-      <td>0.020580</td>
-      <td>221.354900</td>
-      <td>222.616119</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
 ## Plot of periods of trading
 
 
@@ -226,4 +133,3 @@ print("Transaction cost: {}".format((sum(df['position'].diff() != 0) * 10)))
 
 
 ![png](output_11_1.png)
-
